@@ -5,9 +5,11 @@ const SCORE_SYSTEM = {
     3: '40',
     4: 'AD'
 };
+// Define the rules of the game.
 const TiebreakPoint = 7;
 const MatchWinSet = 2;
 
+// Use the map to convert to the conventional expressions.
 function gameScoreConverter(gameScore) {
     return [SCORE_SYSTEM[gameScore[0]], SCORE_SYSTEM[gameScore[1]]]
 }
